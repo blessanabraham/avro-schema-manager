@@ -1,0 +1,26 @@
+@import "~main";
+
+:local(.container) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 300;
+  display: flex;
+  height: $appbar-height;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  background-color: $white;
+  border-bottom: solid 1px $gray-vlight;
+
+  @include shadow-vlight();
+
+  .logo {
+    display: inline-block;
+    //width: 10rem;
+    height: 90%;
+    //background: resolve("logo.svg") no-repeat 0 8px / auto 27px;
+  }
+}

@@ -1,0 +1,13 @@
+[package]
+name = "storage"
+version = "0.1.0"
+authors = ["Blessan Abraham <blessan.abraham@blippar.com>"]
+edition = "2018"
+
+[features]
+sqlite = ["rusqlite"]
+
+[dependencies]
+avro-rs = "0.9"
+rusqlite = { version = "0.23", optional = true }
+serde = { version = "1.0", features = ["derive"] }

@@ -1,0 +1,20 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Blessan Abraham <blessan.abraham@blippar.com>"]
+edition = "2018"
+
+[features]
+sqlite = ["storage/sqlite"]
+
+[dependencies]
+async-graphql = "1.12"
+async-graphql-warp = "1.4"
+config = { version = "0.10", features = ["json"] }
+env_logger = "0.7"
+lazy_static = "1.4"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+storage = { path = "./storage" }
+tokio = { version = "0.2", features = ["macros"] }
+warp = { version = "0.2", default-features = false }

@@ -1,0 +1,12 @@
+# JetBrains Stuff
+*.ipr
+*.iws
+**/*.iml
+
+# Rust Stuff
+target/
+
+# NPM Stuff
+**/node_modules/
+**/public/
+**/.awcache/

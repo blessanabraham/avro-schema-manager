@@ -1,0 +1,20 @@
+@import "~main";
+
+:local(.schema-list) {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    background-color: $white;
+
+    &:nth-child(odd) {
+      background-color: $gray-light;
+    }
+  }
+
+  td {
+    padding: 0.7rem;
+    text-align: start;
+    color: $gray-vdark;
+  }
+}
